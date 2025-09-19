@@ -1,0 +1,23 @@
+.grid-container {
+  display: grid;
+  background-color: #2196f3;
+  grid-template-columns: 2fr 1fr 3fr 1.5fr; /* Define column sizes */ /*works the same as flex-grow*/
+  /* grid-template-columns: repeat (4, 1fr); Define 4 equal columns */
+  /* grid-auto-rows: 150px; /* Define default row size */
+  /* grid-template-rows: 200px 100px; Define row sizes */
+
+  /* grid-auto-rows: auto; Rows adjust to content size */
+  grid-auto-rows: minmax(
+    150px,
+    auto
+  ); /* Minimum row size of 150px, but can grow with content */
+  /* grid-row-gap: 20px; /* Space between rows */
+  /* grid-column-gap: 10px; Space between columns  */
+  gap: 20px 10px; /* Shorthand for row and column gaps */
+  
+}
+
+.grid-item {
+    background-color: lightgreen;
+    padding: 20px;
+}
