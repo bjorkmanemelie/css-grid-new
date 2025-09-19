@@ -16,10 +16,7 @@
   /* grid-column-gap: 10px; Space between columns  */
   gap: 20px 10px; /* Shorthand for row and column gaps */
   padding: 10px;
-  grid-template-areas:
-    "header header"
-    "sidebar content"
-    "footer footer"; /* Define named grid areas */
+  color: white;
 }
 
 .grid-item {
@@ -27,17 +24,16 @@
   padding: 20px;
 }
 
-
 .grid-item1 {
-    grid-area: header; /* Assign to named area */
+    grid-column. 1 / -1; /* Span all columns */
+    background-color: aliceblue;
 }
-
 
 .grid-item2 {
-    grid-area: sidebar; /* Assign to named area */
+    grid-column: 2 / 4; /* Start at column 2, end before column 4 */
+    background-color: coral;
 }
-
-
 .grid-item3 {
-    grid-area: content; /* Assign to named area */
+    grid-column: 1 / span 2; /* Start at column 1, span 2 columns */
+    background-color:yellow;
 }
